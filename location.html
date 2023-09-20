@@ -1,0 +1,26 @@
+
+<p id="list"></p>
+
+<script>
+    fetch("https://museumofpoliticalcorruption.org/wp-content/uploads/2023/09/locations.json")
+  .then((response) => {
+    return response.json()
+  })
+  .then((data) => {
+    // Work with JSON data here
+    console.log(data)
+    
+    
+    data.locations.forEach(location => {
+    // Create location element 
+    const locationElement = document.createElement('h1')
+    
+    // Create content like name and address
+     locationElement.innerHTML = location.name;
+   
+    // Add element to list
+    list.appendChild(locationElement)
+  })
+  
+  })
+</script>
