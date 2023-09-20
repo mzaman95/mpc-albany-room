@@ -1,0 +1,20 @@
+{
+  "locations": [
+    {
+      "id": "1",
+      "name": "The Albany Evening Journal",
+      "address": "Southern Tower at SUNY Plaza (corner of Division Street & Broadway)",
+      "description": "The Albany Evening Journal was promoted as “The Only Republican Paper in Albany.” In the early 1900s, William “Billy” Barnes (1866-1930) was both the paper’s publisher and the last Republican Boss of Albany County. Barnes’ 20 year poliMcal control ended in scandal when misdirecMon of coal purchased by the city at favorable rates to party favorites was discovered. This, along with a lengthy transit strike allowed the Democrats to win in 1922. Note: The building’s tower is not part of the original D&H (Delaware & Hudson) complex, but was built by Barnes to blend into the overall design based on the architecture of the old Cloth Hall in Ypres, Belgium.",
+      "audio": "",
+      "image": ""
+    },
+    {
+      "id": "2",
+      "name": "Old City Hall",
+      "address": "Broadway & Hudson Ave. (East side)",
+      "description": "On this site stood the \"Stadt Huys,\" Albany's first public building. It was small — resembling a residence and not a public building. The common council and the city and county courts held regular sessions here. In 1741 a larger three-story brick building was built to accommodate the needs of the growing city. It was here that one of the earliest colonial episodes of poliMcal reform occurred. In the summer of 1754, Benjamin Franklin met at City Hall with seven of the colonies’ representaMves to propose his Albany Plan -- a roadmap for centralizing the colonial governments in North America. UlMmately, however, the colonial assemblies and the BriMsh government rejected it fearing too great an encroachment upon their authoriMes.",
+      "audio": "",
+      "image": ""
+    }
+  ]
+}
