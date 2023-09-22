@@ -1,26 +1,106 @@
+<html>
 
-<p id="list"></p>
+<head>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="virtual-tour.css">
+</head>
 
-<script>
-    fetch("https://museumofpoliticalcorruption.org/wp-content/uploads/2023/09/locations.json")
-  .then((response) => {
-    return response.json()
-  })
-  .then((data) => {
-    // Work with JSON data here
-    console.log(data)
-    
-    
-    data.locations.forEach(location => {
-    // Create location element 
-    const locationElement = document.createElement('h1')
-    
-    // Create content like name and address
-     locationElement.innerHTML = location.name;
-   
-    // Add element to list
-    list.appendChild(locationElement)
-  })
-  
-  })
-</script>
+<body>
+    <!-- --------------HTML Content for Virtual Map Start ---------------->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="Map__Wrapper">
+                    <figure class="Map__Figure"><img class="img-fluid" src="downtownAlbanyMap.png"
+                            alt="Map of Downtown Albany"></figure>
+                    <div class="Location__Modal">
+
+                        <!------------ HotSpot Input Start ------------>
+                        <div class="BornHS__Modal__Input">
+                            <input type="checkbox" id="H1" name="HotSpot" class="BornHS__Input"
+                                style="left: 10%; top: 15%;">
+                            <label for="H1" class="BornHS__Label Enabled_HS" style="left: 10%; top: 15%;"></label>
+                            <label for="H1" class="BornHS__Overlay"></label>
+                            <!------------ Content Start ------------>
+                            <div class="BornHS__Modal__Content" style="left: 13%; top: 20%;">
+                                <div class="Content__Wrapper">
+                                    <label for="H1" class="Modal__Close"></label>
+                                    <h3 class="BornHS__Title">The Albany Evening Journal</h3>
+                                    <p>Southern Tower at SUNY Plaza (corner of Division Street & Broadway)</p>
+                                    <p>The Albany Evening Journal was promoted as “The Only Republican Paper in Albany.”
+                                        In the early 1900s, William “Billy”
+                                        Barnes (1866-1930) was both the paper’s publisher and the last Republican Boss
+                                        of Albany County. Barnes’ 20 year
+                                        poliMcal control ended in scandal when misdirecMon of coal purchased by the city
+                                        at favorable rates to party favorites
+                                        was discovered. This, along with a lengthy transit strike allowed the Democrats
+                                        to win in 1922. Note: The building’s
+                                        tower is not part of the original D&H (Delaware & Hudson) complex, but was built
+                                        by Barnes to blend into the overall
+                                        design based on the architecture of the old Cloth Hall in Ypres, Belgium.</p>
+                                </div>
+                            </div>
+                            <!------------ Content End -------------->
+                        </div>
+                        <!------------ HotSpot Input End -------------->
+
+
+                        <!------------ HotSpot Input Start ------------>
+                        <div class="BornHS__Modal__Input">
+                            <input type="checkbox" id="H4" name="HotSpot" class="BornHS__Input"
+                                style="left: 15%; top: 90%;">
+                            <label for="H4" class="BornHS__Label Enabled_HS" style="left: 15%; top: 90%;"></label>
+                            <label for="H4" class="BornHS__Overlay"></label>
+                            <!------------ Content Start ------------>
+                            <div class="BornHS__Modal__Content" style="left: 20%; bottom: 10%;">
+                                <div class="Content__Wrapper">
+                                    <label for="H4" class="Modal__Close"></label>
+                                    <h3 class="BornHS__Title">Popup Title</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia pariatur
+                                        laudantium deserunt minima
+                                        delectus illum dolor!</p>
+                                </div>
+                            </div>
+                            <!------------ Content End -------------->
+                        </div>
+                        <!------------ HotSpot Input End -------------->
+
+                    </div>
+                    <!------------ HotSpot Wrapper End -------------->
+
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+
+
+    <script>
+        $('.BornHS__Input').change(function () {
+            if ($(this).is(":checked")) {
+                $('.Map__Figure').addClass("Blur__Background");
+
+                $('.BornHS__Label').removeClass("Enabled_HS");
+                $('.BornHS__Label').addClass("Disabled_HS");
+            } else {
+                $('.Map__Figure').removeClass("Blur__Background");
+
+                $('.BornHS__Label').removeClass("Disabled_HS");
+                $('.BornHS__Label').addClass("Enabled_HS");
+            }
+        });
+    </script>
+</body>
+
+</html>
