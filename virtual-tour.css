@@ -69,6 +69,10 @@ body {
       }
 
       .Location__Image {
+        padding-right: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
 
       .Location__Name {
