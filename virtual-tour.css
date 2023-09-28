@@ -60,16 +60,19 @@ body {
     }
 
     .Content__Wrapper {
-      display: flex;
       padding: 40px;
       position: relative;
+
+      @media (min-width: 1200px) {
+        display: flex;
+      }
 
       .Content__Column {
         flex: 50%;
       }
 
       .Location__Image {
-        padding-right: 30px;
+        padding-left: 30px;
         display: flex;
         justify-content: center;
         align-items: center;
