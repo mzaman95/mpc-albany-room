@@ -22,11 +22,15 @@
 <body>
     <!-- Your code that needs compiling goes in a type="text/babel" `script` tag -->
     <script type="text/babel" data-presets="react,stage-3">
-
+        // Data
         const locations = [
             {
                 "id": "1",
                 "name": "The Albany Evening Journal",
+                "placement": {
+                    "right": "30%",
+                    "bottom": "4%"
+                },
                 "address": "Southern Tower at SUNY Plaza (corner of Division Street & Broadway)",
                 "description": "The Albany Evening Journal was promoted as “The Only Republican Paper in Albany.” In the early 1900s, William “Billy” Barnes (1866-1930) was both the paper’s publisher and the last Republican Boss of Albany County. Barnes’ 20 year poliMcal control ended in scandal when misdirection of coal purchased by the city at favorable rates to party favorites was discovered. This, along with a lengthy transit strike allowed the Democrats to win in 1922. Note that the building’s tower is not part of the original D&H (Delaware & Hudson) complex, but was built by Barnes to blend into the overall design based on the architecture of the old Cloth Hall in Ypres, Belgium.",
                 "audio": "",
@@ -123,15 +127,34 @@
 
         ]
 
+        // JQuery
+        $('.HS__Input').change(function () {
+            if ($(this).is(":checked")) {
+                $('.Map__Figure').addClass("Blur__Background");
+
+                $('.HS__Label').removeClass("Enabled_HS");
+                $('.HS__Label').addClass("Disabled_HS");
+            } else {
+                $('.Map__Figure').removeClass("Blur__Background");
+
+                $('.HS__Label').removeClass("Disabled_HS");
+                $('.HS__Label').addClass("Enabled_HS");
+            }
+        });
+
         const LocationHotSpot = (props) => {
             const { location } = props
-            const { name } = location
-            return <p>This is a card for Location {name}</p>
+            const { id, name, placement } = location
+            return (
+                <div className="HS__Modal__Input">
+                    <input type="checkbox" id={id} name="HotSpot" className="HS__Input" style={placement} />
+                    <p>This is a card for Location {name}</p>
+                </div>)
         }
 
         const TheAlbanyRoom = () => {
-            const locationHotspots = locations.map((location) => {
-                return <LocationHotSpot location={location} />
+            const locationHotspots = locations.map((location, index) => {
+                return <LocationHotSpot location={location} key={index} />
             })
             return (<><div className="container"><div className="row"><div className="col-md-12"> <div className="Map__Wrapper"><figure className="Map__Figure"><img className="img-fluid" src="downtownAlbanyMap.png"
                 alt="Map of Downtown Albany" /></figure><div className="Location__Modal">{locationHotspots}</div></div>
