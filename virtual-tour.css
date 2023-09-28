@@ -8,7 +8,7 @@ body {
 .Map__Wrapper {
   position: relative;
 
-  .BornHS__Modal__Content {
+  .HS__Modal__Content {
     background: #2a2a2a;
     border-radius: 5px;
     box-shadow: 0 0 24px rgba(0, 0, 0, 0.22);
@@ -107,7 +107,7 @@ body {
     }
   }
 
-  .BornHS__Input {
+  .HS__Input {
     height: 0;
     opacity: 0;
     overflow: hidden;
@@ -115,7 +115,7 @@ body {
     text-indent: -9999px;
     width: 0;
     z-index: -1;
-    + .BornHS__Label {
+    + .HS__Label {
       border-radius: 50%;
       cursor: pointer;
       height: 20px;
@@ -148,7 +148,7 @@ body {
         width: 2px;
       }
     }
-    ~ .BornHS__Overlay {
+    ~ .HS__Overlay {
       display: none;
       height: 100%;
       left: 0;
@@ -158,14 +158,14 @@ body {
       z-index: 3;
     }
     &:checked {
-      + .BornHS__Label {
+      + .HS__Label {
         transform: rotate(45deg);
       }
-      ~ .BornHS__Modal__Content {
+      ~ .HS__Modal__Content {
         opacity: 0.95;
         visibility: visible;
       }
-      ~ .BornHS__Overlay {
+      ~ .HS__Overlay {
         display: block;
       }
     }
