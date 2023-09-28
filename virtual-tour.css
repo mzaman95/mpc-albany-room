@@ -91,8 +91,12 @@ body {
       }
 
       .Location_Description {
-        padding-top: 10px;
+        padding-top: 30px;
         font-size: 14px;
+
+        @media (min-width: 1200px) {
+          padding-top: 10px;
+        }
       }
 
       p {
