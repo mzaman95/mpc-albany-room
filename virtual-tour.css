@@ -105,6 +105,14 @@ body {
         text-transform: uppercase;
       }
 
+      .carousel {
+        .carousel-inner {
+          .carousel-item {
+            max-height: 30vh;
+          }
+        }
+      }
+
       .Location_Description {
         padding-top: 30px;
         font-size: 14px;
@@ -208,6 +216,10 @@ body {
 
 .Enabled_HS {
   background: #9933cc;
+
+  &:hover {
+    background-color: #b758e7;
+  }
 }
 
 .Disabled_HS {
