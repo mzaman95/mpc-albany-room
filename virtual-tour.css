@@ -13,7 +13,7 @@ body {
     border-radius: 5px;
     box-shadow: 0 0 24px rgba(0, 0, 0, 0.22);
     color: #fff;
-    opacity: 0;
+    opacity: 0.5;
     position: absolute;
     transition: all 0.3s ease-in-out;
     visibility: hidden;
@@ -68,10 +68,26 @@ body {
         flex: 50%;
       }
 
+      .Location__Image {
+      }
+
       .Location__Name {
-        font-size: 16px;
+        font-size: 20px;
+        text-transform: uppercase;
+        font-weight: bold;
+      }
+
+      .Location__Address {
+        padding-top: 5px;
+        font-size: 12px;
         text-transform: uppercase;
       }
+
+      .Location_Description {
+        padding-top: 10px;
+        font-size: 14px;
+      }
+
       p {
         font-size: 13px;
         margin: 0;
@@ -135,7 +151,7 @@ body {
         transform: rotate(45deg);
       }
       ~ .BornHS__Modal__Content {
-        opacity: 1;
+        opacity: 0.95;
         visibility: visible;
       }
       ~ .BornHS__Overlay {
