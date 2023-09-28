@@ -26,15 +26,13 @@
                     <div class="Location__Modal">
 
                         <!------------ HotSpot Input Start ------------>
-                        <div class="BornHS__Modal__Input">
-                            <input type="checkbox" id="H1" name="HotSpot" class="BornHS__Input"
+                        <div class="HS__Modal__Input">
+                            <input type="checkbox" id="H1" name="HotSpot" class="HS__Input"
                                 style="left: 10%; top: 15%;">
-                            <label for="H1" class="BornHS__Label Enabled_HS" style="left: 10%; top: 15%;"></label>
-                            <label for="H1" class="BornHS__Overlay"></label>
+                            <label for="H1" class="HS__Label Enabled_HS" style="left: 10%; top: 15%;"></label>
+                            <label for="H1" class="HS__Overlay"></label>
                             <!------------ Content Start ------------>
-
-
-                            <div class="BornHS__Modal__Content" style="left: 13%; top: 20%;">
+                            <div class="HS__Modal__Content" style="left: 13%; top: 20%;">
                                 <label for="H1" class="Modal__Close"></label>
                                 <div class="Content__Wrapper">
                                     <div class="Content__Column Location__Details">
@@ -43,8 +41,7 @@
                                             Street & Broadway)
                                         </p>
                                         <img class="img-fluid" src="images/evening-journal.jpeg"
-                                            alt="The Albany Evening Journal">
-
+                                            alt="The Albany Evening Journal" />
                                     </div>
                                     <div class="Content__Column Location__Image">
                                         <p class="Location_Description">The Albany Evening Journal was promoted as “The
@@ -55,7 +52,7 @@
                                             Barnes (1866-1930) was both the paper’s publisher and the last Republican
                                             Boss
                                             of Albany County. Barnes’ 20 year
-                                            poliMcal control ended in scandal when misdirecMon of coal purchased by the
+                                            political control ended in scandal when misdirecMon of coal purchased by the
                                             city
                                             at favorable rates to party favorites
                                             was discovered. This, along with a lengthy transit strike allowed the
@@ -76,16 +73,16 @@
 
 
                         <!------------ HotSpot Input Start ------------>
-                        <div class="BornHS__Modal__Input">
-                            <input type="checkbox" id="H4" name="HotSpot" class="BornHS__Input"
+                        <div class="HS__Modal__Input">
+                            <input type="checkbox" id="H4" name="HotSpot" class="HS__Input"
                                 style="left: 15%; top: 90%;">
-                            <label for="H4" class="BornHS__Label Enabled_HS" style="left: 15%; top: 90%;"></label>
-                            <label for="H4" class="BornHS__Overlay"></label>
+                            <label for="H4" class="HS__Label Enabled_HS" style="left: 15%; top: 90%;"></label>
+                            <label for="H4" class="HS__Overlay"></label>
                             <!------------ Content Start ------------>
-                            <div class="BornHS__Modal__Content" style="left: 20%; bottom: 10%;">
+                            <div class="HS__Modal__Content" style="left: 20%; bottom: 10%;">
                                 <div class="Content__Wrapper">
                                     <label for="H4" class="Modal__Close"></label>
-                                    <h3 class="BornHS__Title">Popup Title</h3>
+                                    <h3 class="Location_Description">Popup Title</h3>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia pariatur
                                         laudantium deserunt minima
                                         delectus illum dolor!</p>
@@ -107,17 +104,17 @@
 
 
     <script>
-        $('.BornHS__Input').change(function () {
+        $('.HS__Input').change(function () {
             if ($(this).is(":checked")) {
                 $('.Map__Figure').addClass("Blur__Background");
 
-                $('.BornHS__Label').removeClass("Enabled_HS");
-                $('.BornHS__Label').addClass("Disabled_HS");
+                $('.HS__Label').removeClass("Enabled_HS");
+                $('.HS__Label').addClass("Disabled_HS");
             } else {
                 $('.Map__Figure').removeClass("Blur__Background");
 
-                $('.BornHS__Label').removeClass("Disabled_HS");
-                $('.BornHS__Label').addClass("Enabled_HS");
+                $('.HS__Label').removeClass("Disabled_HS");
+                $('.HS__Label').addClass("Enabled_HS");
             }
         });
     </script>
