@@ -15,6 +15,10 @@
     {
       "id": "H2",
       "name": "Old City Hall",
+      "placement": {
+        "right": "33%",
+        "bottom": "12%"
+      },
       "address": "Broadway & Hudson Ave. (East side)",
       "description": "On this site stood the \"Stadt Huys,\" Albany's first public building. It was small — resembling a residence and not a public building. The common council and the city and county courts held regular sessions here. In 1741 a larger three-story brick building was built to accommodate the needs of the growing city. It was here that one of the earliest colonial episodes of poliMcal reform occurred. In the summer of 1754, Benjamin Franklin met at City Hall with seven of the colonies’ representaMves to propose his Albany Plan -- a roadmap for centralizing the colonial governments in North America. UlMmately, however, the colonial assemblies and the BriMsh government rejected it fearing too great an encroachment upon their authoriMes.",
       "audio": "",
@@ -23,6 +27,10 @@
     {
       "id": "H3",
       "name": "Albany Argus Newspaper",
+      "placement": {
+        "right": "37%",
+        "bottom": "7%"
+      },
       "address": "412 Broadway (corner of Broadway & Beaver)",
       "description": "Only yards from Barnes’ Republican paper, the Albany Argus was the voice of local Democrats. It was taken over by Daniel Manning (1831-1887) as publisher in 1873. Manning’s Argus had lucraMve prinMng jobs from the city and state. His son, James, took over the paper in 1887 and, three years later, became Mayor of Albany. Both Daniel and James Manning’s control of Albany was famous for vote buying and using local police to enforce his policies. “Repeaters” (thugs brought in from other areas to vote) were used by the boatloads, including Troy’s notorious “Bat” Shea, to vote in Albany elecMons. This corrupt pracMce conMnued with Judge D. Cady Herrick’s (1846-1926) poliMcal machine for a decade later.",
       "audio": "",
@@ -31,6 +39,10 @@
     {
       "id": "H4",
       "name": "Stanwix Hall",
+      "placement": {
+        "right": "31%",
+        "bottom": "35%"
+      },
       "address": "SE corner Broadway & Maiden Lane (replaced by the James T. Foley US Courthouse building)",
       "description": "Following remodeling in 1878, the Stanwix hotel became popular with local and state legislators while lobbying for State offices. The infamous Tammany Hall ring-leader William “Boss” Tweed, who bilked New York City out of millions of dollars, had room number 450 assigned to him. A few doors down, Room 454 was used by Albany County Democrats. Journalist Nellie Bly stayed here in 1888 on her trip to Albany to expose corrupMon, and the AnM- Monopoly League held meeMngs here in the 1880s. This group promoted a return to Jeffersonian ideas — that ciMzens have a civic duty to aid the state and resist corrupMon, especially monarchism and aristocracy.",
       "audio": "",
@@ -39,6 +51,10 @@
     {
       "id": "H5",
       "name": "Delevan House",
+      "placement": {
+        "right": "27%",
+        "bottom": "57%"
+      },
       "address": "East side Broadway between Columbia & Steuben. (Former Albany Union Train StaXon, now Peter Kieman Plaza)",
       "description": "On this site stood the opulent Delevan House, a popular lodging among lobbyists and poliMcians of both parMes. This hotel was parMcularly noteworthy for bribery and grai among its guests during the Tammany Hall era. On March 1, 1868, the famous “Robber Baron” Jay Gould was arrested by the sheriff for contempt of court but paid half a million on bail. He spent the week in Parlor 57 at the hotel doling out money ($500,000), cigars, and champagne to NYS lawmakers trying to get a bill passed. In 1882, Teddy Roosevelt stayed at the Delavan as a young, 24 year old Assemblyman from New York City. WriMng in his diary, he noted that some of his fellow legislators were “vicious, stupid looking scoundrels with apparently not a redeeming trait.” The DELEVAN burned on December 30, 1894. Around 20 poliMcians were staying there at the Mme. They escaped but 15 workers perished.",
       "audio": "",
@@ -47,6 +63,10 @@
     {
       "id": "H6",
       "name": "Albany Times Union",
+      "placement": {
+        "left": "48%",
+        "top": "8%"
+      },
       "address": "16 Sheridan Ave.",
       "description": "The founders of the Albany Times Union vowed to be poliMcally independent when it began in 1856. In 1913, MarMn P. Glynn, editor, publisher & owner became the DemocraMc Governor of New York when Governor William Sulzer was impeached. Glynn refused to give up the paper while Governor and used his paper to anack the corrupt Tammy Hall organizaMon. The paper leaned towards the Democrats and profited from adverMsing revenue from the O’Connell-Corning Machine. Patronage jobs went to reMred and non- reMred reporters. The TU changed when William Randolph Hearst purchased the rival Knickerbocker News in 1960 and went aier the O’Connell-Corning machine. Gene Robb was brought in as the new Editor of the Times Union and, in 1959, hired Daniel Bunon to serve as execuMve editor. In scathing editorials, Bunon railed against the prevailing machine. Bunon lei the paper in 1966 to run for congress, and against all odds --as a Republican in a heavily DemocraMc district -- he won (serving two terms). Later on, the Times Union did extensive invesMgaMve stories about the O’Connell- Corning Machine’s corrupt policies but was never able to bring it down. By then the TU had established its strong reputaMon as a champion of honest, nonparMsan journalism.",
       "audio": "",
@@ -55,6 +75,10 @@
     {
       "id": "H7",
       "name": "Kenmore Hotel",
+      "placement": {
+        "left": "54%",
+        "top": "35%"
+      },
       "address": "74 North Pearl St.",
       "description": "Built by former slave Adam Blake, the KENMORE was famous for poliMcal grai, its prohibiMon-era speakeasy the “RainBo Room,” and as the hang out for the notorious gangster Jack “Legs” Diamond (Diamond was killed in 1931 in a rooming house at 67 Dove St. Some historians believe that Albany Boss Dan O’Connell ordered the hit). Decades earlier, in 1888, the intrepid New York World reporter Nellie Bly went undercover at the KENMORE to expose corrupMon. She met with Mr. Edward R. Phelps, the “King of the Lobby” in Room 96. Bly posed as a lobbyist and agreed to pay Phelps $1250 to have a bill killed by the NYS legislature. The bill she  selected was killed, but rather than pay Phelps, she returned to her paper, Pulitzer’s New York World, and wrote about her experience proving that many New York legislators were bribable.",
       "audio": "",
@@ -63,6 +87,10 @@
     {
       "id": "H8",
       "name": "The Committee of 13",
+      "placement": {
+        "left": "54%",
+        "top": "53%"
+      },
       "address": "25 North Pearl",
       "description": "The “Comminee of 13” was a good government group founded in January 1881 by several Albany lawyers with Marcus T. Hun as the leader. This group invesMgated fraud and corrupMon in Albany and brought transparency into how local Albany government works. A smaller version, the “Comminee of 3” included Hun, James Fenimore Cooper (grandson of the famed author) and Henry A. Peckham, son of Supreme Court JusMce Rufus W. Peckham. The group published annual reports on their government reforms and corrupMon findings. In addiMon to exposing corrupMon, the Group introduced four reform bills: one provided a new method of selecMng grand and peMt jurors in the city; another gave the Recorder exclusive jurisdicMon of misdemeanors; the third authorized acMons to be brought by taxpayers against officers guilty of breach of official duMes; and the fourth required all bills presented to the Board of Supervisors be printed before acted upon.",
       "audio": "",
@@ -71,6 +99,10 @@
     {
       "id": "H9",
       "name": "Albany City Hall",
+      "placement": {
+        "left": "39%",
+        "top": "32%"
+      },
       "address": "24 Eagle St.",
       "description": "This beauMful Romanesque building built in 1881-83 and designed by H. H. Richardson was the home of four poliMcal machines: the Barnes, Manning, Herrick, and O’Connell-Corning machines. The O'Connell-Corning Machine was an unusual alliance between the working class Irish O’Connells and the aristocrat Protestant Corning families. Mayor Erastus Corning 2nd (1902-1983), was the longest termed mayor in America. The Corning-O’Connell machine withstood mulMple probes from Federal and State invesMgaMons, including into alleged “slush funds,” protecMng gambling operaMons, ballot box stuffing, dominaMon of the judiciary, favored contracMng, and juggling of real estate assessment. On November 18, 1938, Governor Dewey requested a legislaMve invesMgaMon of Albany’s DemocraMc administraMon calling it a “ruthless poliDcal monopoly.” Two hundred people were charged with illegal registraMon and voMng. Yet the machine survived. Its few defeats came in 1966 when reformer Daniel E. Bunon won a seat in the House of RepresentaMves. Two years later the machine lost the District Anorney, two Assembly seats and a State Senate seat. But even those reform efforts were short-lived. The century-long legacy of machine poliMcs in Albany is among the most storied examples of machine poliMcs found throughout the US in the 19th and 20th centuries.",
       "audio": "",
@@ -79,6 +111,10 @@
     {
       "id": "H10",
       "name": "The State Capitol",
+      "placement": {
+        "left": "26%",
+        "top": "30%"
+      },
       "address": "State St. and, Washington Ave",
       "description": "Located at the top of State Street, this majesMc symbol of State government took 32 years to build (1867-99) and represents two different architectural styles, Romanesque Revival and Neo-Renaissance. Countless lawmakers have walked these halls, which resonate with stories of corrupMon and reform efforts. It was here that Theodore Roosevelt waged war against the corrupMon of fellow legislators. As a member of the CiMes Comminee, Roosevelt observed this about his colleagues: “Altogether the CommiFee is just about as bad as it could possibly be...most of the members are posiDvely corrupt, and the others are really singularly incompetent.” Yet poliMcal corrupMon at the Capitol is not relegated to the past. In 2016, Sheldon Silver, the once the powerful DemocraMc speaker of the NYS Assembly was found guilty for accepMng millions of dollars in illicit payments in return for taking acMons on behalf of real estate developers and a cancer researcher (the convicMon was overturned but reaffirmed in a second trial in 2018). Around the same Mme, the Republican Senate Majority Leader Dean G. Skelos was convicted on mulMple counts of bribery, extorMon, and corrupMon. At the height of their power, Silver and Skelos represented two-thirds of what was known as “Three Men in a Room.” This triumvirate (the third man being the governor), represented a longstanding power dynamic that suggested back-room deal making and a lack of transparency. While the scandals that enveloped Silver and Skelos were significant, they were not isolated. A 2016 New York Times study found that, “In the past decade, more than 30 current or former state officeholders in New York have been convicted of crimes, sancDoned or otherwise accused of wrongdoing.”",
       "audio": "",
@@ -87,6 +123,10 @@
     {
       "id": "H11",
       "name": "The Dewitt Clinton Hotel",
+      "placement": {
+        "left": "33%",
+        "top": "49%"
+      },
       "address": "144 State St. (currently the Renaissance Albany Hotel)",
       "description": "The DeWin Clinton was known as the “Democrat’s Hotel” and was the center for state, county, and local Democrats who made deals in the famous Crystal Ballroom. Located just across from the Capitol, lobbyists and lawmakers would mingle in the lobby with drink in hand. MeeMngs held in back rooms were oien used to broker local, state, and naMonal deals. Albany Boss Dan O’Connell had an office here. In 1946 the Saturday Evening Post published an arMcle that portrayed Albany in a negaMve light. Fearing bad publicity, O’Connell had his people purchase every copy in the city and stashed them at the DeWin.",
       "audio": "",
@@ -95,6 +135,10 @@
     {
       "id": "H12",
       "name": "Ten Eyck Hotel",
+      "placement": {
+        "left": "48%",
+        "top": "53%"
+      },
       "address": "NW corner State & North Pearl St.",
       "description": "This urban corner is a site of national and local history. Philip Livingston, a signatory to the DeclaraMon of Independence, was born here. In 1915, the second Ten Eyck Hotel was built on this site. It was known as the \"Republican’s Hotel.\" In the 1960s, reformer Dan Bunon had his congressional office here. It was also at the historic Ten Eyck that William Randolph Hearst addressed the Independence League on February 28, 1906. The Independence League (later the Independence Party) was created to offer a viable naMonal alternaMve. Hearst’s words sMll resonate today: \"“The Fundamental idea of the Independence League... is to wrest the Government from the hands of the powerful financial interests that now possess it and return it to the hands of the typical American ciDzens who created it.\"",
       "audio": "",
