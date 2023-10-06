@@ -25,8 +25,10 @@
                     "bottom": "4%",
                 },
                 "address": "Southern Tower at SUNY Plaza (corner of Division Street & Broadway)",
-                "description": "The Albany Evening Journal was promoted as “The Only Republican Paper in Albany.” In the early 1900s, William “Billy” Barnes (1866-1930) was both the paper’s publisher and the last Republican Boss of Albany County. Barnes’ 20 year poliMcal control ended in scandal when misdirection of coal purchased by the city at favorable rates to party favorites was discovered. This, along with a lengthy transit strike allowed the Democrats to win in 1922. Note that the building’s tower is not part of the original D&H (Delaware & Hudson) complex, but was built by Barnes to blend into the overall design based on the architecture of the old Cloth Hall in Ypres, Belgium.",
-                "image": "images/evening-journal.jpeg"
+                "description": "The Albany Evening Journal, published by the last Republican Boss of Albany County - William “Billy Barnes”, was once promoted as “The Only Republican Paper in Albany”. ",
+                "image": "https://museumofpoliticalcorruption.org/wp-content/uploads/2023/10/albany-evening-journal.jpeg",
+                "linkSectionName": "The Newspapers",
+                "linkSectionURL": "https://museumofpoliticalcorruption.org/the-albany-room-the-newspapers/"
             },
             {
                 "id": "H2",
@@ -154,7 +156,7 @@
 
         const LocationHotSpot = (props) => {
             const { location } = props
-            const { id, placement, name, description, address } = location
+            const { id, placement, name, description, address, image, linkSectionName, linkSectionURL } = location
             const dataBsTarget = "#" + id
 
             return (
@@ -165,18 +167,18 @@
                     </a>
                     <div className="modal" tabIndex="-1" id={id}>
                         <div className="modal-dialog">
-                            <div className="modal-content">
+                            <div className="modal-content text-center">
                                 <div className="modal-header">
-                                    <h5 className="modal-title">{name}</h5>
+                                    <h3 className="modal-title">{name}</h3>
                                     <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
                                 <div className="modal-body">
-                                    <span>{address}</span>
-                                    <p>{description}</p>
-                                </div>
-                                <div className="modal-footer">
-                                    <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                    <button type="button" className="btn btn-primary">Save changes</button>
+                                    <img src={image} alt={name} className="img-fluid" />
+                                    <span className="location-address">{address}</span>
+                                    <br />
+                                    <br />
+                                    <p className="location-details">{description}</p>
+                                    <p className="location-details">Learn more about it in The Albany Room's <a className="link-section-name" href={linkSectionURL}>{linkSectionName}</a> section.</p>
                                 </div>
                             </div>
                         </div>
