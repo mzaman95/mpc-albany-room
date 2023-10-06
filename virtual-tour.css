@@ -1,250 +1,58 @@
-body {
-  color: #9933cc;
-  font-family: Gotham;
-  padding-top: 100px;
-  text-align: center;
+.downtown-albany-map {
+  filter: grayscale(100%) !important;
+  opacity: 0.65 !important;
 }
-
-.Map__Wrapper {
+.hotspots {
   position: relative;
+}
+.hotspots img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
 
-  .HS__Teaser {
-    background-color: #2a2a2a;
-    color: #fff;
-    opacity: 0.95;
-    border-radius: 5px;
-    padding: 20px;
-    max-width: 40%;
-    visibility: hidden;
-    position: absolute;
-
-    .Location__Name__Teaser {
-      text-transform: uppercase;
-      font-size: 16px;
-      font-weight: bolder;
-      @media (max-width: 1200px) {
-        font-size: 12px;
-      }
-    }
-
-    .Location__Image__Teaser {
-      @media (max-width: 1200px) {
-        display: none;
-      }
-    }
-
-    @media (max-width: 1200px) {
-      padding-top: 10px;
-      padding-bottom: 5px;
-      padding-right: 20px;
-      padding-left: 20px;
-    }
+@keyframes expand-hotspot {
+  0% {
+    transform: scale(0.5);
+    opacity: 1;
   }
-
-  .HS__Modal__Content {
-    background: #2a2a2a;
-    border-radius: 5px;
-    box-shadow: 0 0 24px rgba(0, 0, 0, 0.22);
-    color: #fff;
-    opacity: 0.5;
-    position: absolute;
-    transition: all 0.3s ease-in-out;
-    visibility: hidden;
-    width: 80%;
-    z-index: 4;
-    bottom: auto !important;
-    left: 50% !important;
-    top: 50% !important;
-    transform: translate(-50%, -50%) !important;
-    max-height: 80%;
-    overflow: auto;
-
-    .Modal__Close {
-      cursor: pointer;
-      display: block;
-      height: 50px;
-      right: -5px;
-      position: absolute;
-      transition: all 300ms ease;
-      transform: rotate(45deg);
-      width: 50px;
-      z-index: 5;
-
-      &:before,
-      &:after {
-        background: #fff;
-        content: "";
-        cursor: pointer;
-        display: block;
-        left: 50%;
-        position: absolute;
-        top: 50%;
-        transform: translate(-50%, -50%);
-      }
-
-      &:before {
-        height: 2px;
-        width: 40%;
-      }
-      &:after {
-        height: 40%;
-        width: 2px;
-      }
-    }
-
-    .Content__Wrapper {
-      padding: 40px;
-      position: relative;
-
-      @media (min-width: 1200px) {
-        display: flex;
-      }
-
-      .Content__Column {
-        flex: 50%;
-      }
-
-      .Location__Image {
-        padding-left: 30px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-
-      .Location__Name {
-        font-size: 20px;
-        text-transform: uppercase;
-        font-weight: bold;
-      }
-
-      .Location__Address {
-        padding-top: 5px;
-        font-size: 12px;
-        text-transform: uppercase;
-      }
-
-      .carousel {
-        .carousel-inner {
-          .carousel-item {
-            max-height: 30vh;
-          }
-        }
-      }
-
-      .Location_Description {
-        padding-top: 30px;
-        font-size: 14px;
-
-        @media (min-width: 1200px) {
-          padding-top: 10px;
-        }
-      }
-
-      p {
-        font-size: 13px;
-        margin: 0;
-        padding: 0;
-      }
-    }
-  }
-
-  .HS__Input {
-    height: 0;
+  100% {
+    transform: scale(1.5);
     opacity: 0;
-    overflow: hidden;
-    position: absolute;
-    text-indent: -9999px;
-    width: 0;
-    z-index: -1;
-    + .HS__Label {
-      border-radius: 50%;
-      cursor: pointer;
-      height: 20px;
-      position: absolute;
-      transition: all 300ms ease;
-      width: 20px;
-      z-index: 2;
-      @media (min-width: 768px) {
-        height: 30px;
-        width: 30px;
-      }
-      &:before,
-      &:after {
-        background: #fff;
-        content: "";
-        cursor: pointer;
-        display: block;
-        left: 50%;
-        position: absolute;
-        top: 50%;
-        transform: translate(-50%, -50%);
-      }
-
-      &:before {
-        height: 2px;
-        width: 40%;
-      }
-      &:after {
-        height: 40%;
-        width: 2px;
-      }
-    }
-    ~ .HS__Overlay {
-      display: none;
-      height: 100%;
-      left: 0;
-      position: absolute;
-      width: 100%;
-      top: 0;
-      z-index: 3;
-    }
-    &:checked {
-      + .HS__Label {
-        transform: rotate(45deg);
-      }
-      ~ .HS__Modal__Content {
-        opacity: 1;
-        visibility: visible;
-      }
-      ~ .HS__Overlay {
-        display: block;
-      }
-    }
-    &:hover {
-      ~ .HS__Teaser {
-        visibility: visible;
-      }
-    }
   }
 }
 
-.Location__Modal {
-  bottom: 0;
-  height: 100%;
-  left: 0;
+.hotspot {
   position: absolute;
-  top: 0;
-  right: 0;
-  width: 100%;
-  z-index: 1;
+  cursor: pointer;
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: center;
+  color: #9933cc;
+  font-size: 18px;
 }
 
-.Blur__Background {
-  -webkit-filter: blur(2px);
-  -moz-filter: blur(2px);
-  -o-filter: blur(2px);
-  -ms-filter: blur(2px);
-  filter: blur(2px);
+.hotspot-inner-circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #9933cc;
+  padding: 10px;
 }
 
-.Enabled_HS {
-  background: #9933cc;
-
-  &:hover {
-    background-color: #b758e7;
-  }
+.hotspot-outer-circle {
+  animation: expand-hotspot 2s infinite;
+  width: 20px;
+  height: 20px;
+  background-color: #9933cc;
+  padding: 4px;
 }
 
-.Disabled_HS {
-  display: none;
+.hotspot-inner-circle,
+.hotspot-outer-circle {
+  content: "";
+  display: inline-block;
+  box-sizing: content-box;
+  border-radius: 50%;
 }
