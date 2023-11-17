@@ -13,54 +13,38 @@
     <!-- These are for React -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/react/17.0.2/umd/react.development.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/17.0.2/umd/react-dom.development.js"></script>
-    <link rel="stylesheet" href="homepage.css">
+    <link rel="stylesheet" href="the-albany-room-home.css">
 </head>
 
 <body>
     <script type="text/babel" data-presets="react,stage-3">
         const { useEffect, useState } = React
         // Data
-        /* const categories = [
-             {
-                 "name": "The Hotels",
-                 "link": "https://museumofpoliticalcorruption.org/the-albany-room-the-hotels/",
-                 "image": "https://museumofpoliticalcorruption.org/wp-content/uploads/2023/10/hotel-scaled.jpg"
-             },
-             {
-                 "name": "The State Capitol",
-                 "link": "https://museumofpoliticalcorruption.org/the-albany-room-the-state-capitol/",
-                 "image": "https://museumofpoliticalcorruption.org/wp-content/uploads/2023/10/StateCapitol-scaled.jpeg"
-             },
-             {
-                 "name": "The Walking Tour",
-                 "link": "https://museumofpoliticalcorruption.org/the-albany-room-the-walking-tour/",
-                 "image": "https://museumofpoliticalcorruption.org/wp-content/uploads/2023/10/walking-scaled.jpg"
-             },
-             {
-                 "name": "The Newspapers",
-                 "link": "https://museumofpoliticalcorruption.org/the-albany-room-the-newspapers/",
-                 "image": "https://museumofpoliticalcorruption.org/wp-content/uploads/2023/10/Argus.jpeg"
-             },
-             {
-                 "name": "The Fight Against Corruption",
-                 "link": "https://museumofpoliticalcorruption.org/the-albany-room-the-fight-against-corruption/",
-                 "image": "https://museumofpoliticalcorruption.org/wp-content/uploads/2023/10/boxing-gloves-scaled.jpg"
-             },
-             {
-                 "name": "The Machine",
-                 "link": "https://museumofpoliticalcorruption.org/the-albany-room-the-machine/",
-                 "image": "https://museumofpoliticalcorruption.org/wp-content/uploads/2023/10/machine-scaled.jpg"
-             },
-         ]
- */
-        const Category = (props) => {
-            const { name, link, image } = props
+        const corruptionCategories = [
+            {
+                "name": "Capital Corruption",
+                "link": "https://museumofpoliticalcorruption.org/capital-corruption/",
+                "description": "Explore state-level corruption that occured in Albany, the capital of New York State. "
+            },
+            {
+                "name": "Municipal Mischief",
+                "link": "https://museumofpoliticalcorruption.org/municipal-mischief/",
+                "description": "Explore local corruption and anti-corruption efforts that took place in Albany."
+            }
+
+        ]
+
+        const CorruptionCategory = (props) => {
+            const { name, description, link } = props
             return (
-                <div className="card col-md-4 border-0 rounded-0">
+
+                <div class="col-sm-6">
                     <a href={link} className="category-link">
-                        <img className="card-img-top img-fluid category-img" src={image} alt={name} />
-                        <div class="card-img-overlay">
-                            <h3 class="card-title text-center">{name}</h3>
+                        <div class="card h-100" style={{ borderRadius: "16px" }}>
+                            <div class="card-body text-center">
+                                <p class="card-title" style={{marginBottom:"10px"}}>{name}</p>
+                                <p class="card-text">{description}</p>
+                            </div>
                         </div>
                     </a>
                 </div>
@@ -68,22 +52,14 @@
         }
 
         const TheAlbanyRoomHomePage = () => {
-            const [categories, setCategories] = useState([]);
 
-            useEffect(() => {
-                fetch("https://museumofpoliticalcorruption.org/wp-content/uploads/2023/10/categories.json")
-                    .then(response => response.json())
-                    .then(data => {
-                        setCategories(data)
-                    })
-            }, [])
-
-
-            const categoriesList = categories.map((category, index) => {
-                const { name, link, image } = category
-                return <Category name={name} link={link} image={image} />
+            const categoriesList = corruptionCategories.map((corruptionCategory, index) => {
+                const { name, link, description } = corruptionCategory
+                return <CorruptionCategory name={name} link={link} description={description} />
             })
-            return <><div className="row">{categoriesList}</div></>;
+            return (<div className="row" style={{ maxWidth: "60%", margin: "auto" }}>
+                {categoriesList}
+            </div>);
         };
 
         ReactDOM.render(<TheAlbanyRoomHomePage />, document.getElementById("root"));
